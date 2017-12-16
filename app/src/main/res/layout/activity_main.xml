@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ugurcangursen.guideofistanbul.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:paddingTop="100dp"
+        android:id="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/food"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/store" />
+
+
+
+        <ImageView
+            android:id="@+id/hotels"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/hotels" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/art"
+            android:layout_width="100dp"
+            android:layout_height="98dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/canvas" />
+
+        <ImageView
+            android:id="@+id/shopping"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/grocery" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
